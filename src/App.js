@@ -1,11 +1,11 @@
-/** @jsxImportSource @emotion/react */
 import { useState } from 'react';
 
 let timer;
-export default function App() {
-  const [targetTime, setTargetTime] = useState('2023-09-19T22:00:00');
 
-  const [timeLeft, setTimeLeft] = useState();
+export default function App() {
+  const [targetTime, setTargetTime] = useState('2023-12-31T24:00:00');
+
+  const [timeLeft, setTimeLeft] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
 
   function countDown() {
